@@ -35,7 +35,7 @@ class DelayAgent(Agent):
         
         #if the message is meant to be acted on immediately, just let the ucmagent handle it
         if deliveryTime == 'now':
-            if settings.DEBUGGING_LEVEL >= 1:
+            if settings.DEBUGGING_LEVEL >= 2:
                 print("Delay Agent ignored a message meant for immediate action")
             return 0   
         #otherwise, put this message on the queue 
